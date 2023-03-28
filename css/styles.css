@@ -33,10 +33,7 @@ body {
 
 }
 .container-footer{
-  width: 264px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: 156px;
+  display: flex;
 }
 :root {
   --accent-color: #4d5ae5;
@@ -135,6 +132,8 @@ header{
   font-size: 16px;
   line-height: 1.5;
   color: var(--basic-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover, .nav-link:focus{
@@ -177,6 +176,8 @@ border-radius: 2px;
   font-size: 16px;
   line-height: 1.5;
   color: var(--color-text);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-contact:hover, :focus{
@@ -399,6 +400,8 @@ padding-right: 16px;
   align-items: center;
   background-color: var(--accent-color);
 
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .team-soc-icon{
   fill: #FFFFFF;
@@ -445,6 +448,8 @@ line-height: 40px;
   align-items: center;
   justify-content: center;
   fill:  #8E8F99 ;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:is(:hover, :focus) {
@@ -474,12 +479,10 @@ line-height: 40px;
   display: flex;
 }
 
-.footer-logo-text{
-  width: 264px;
- 
-}
+
 
 .footer-text {
+  width: 264px;
   margin-top: 16px;
   font-size: 16px;
   line-height: 1.5;
@@ -491,7 +494,6 @@ line-height: 40px;
 }
 
 .soc-link{
-  margin-right: auto;
   margin-left: 120px;
 }
 
@@ -518,7 +520,9 @@ line-height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.1);;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customer-soc-link:is(:hover, :focus){
@@ -529,7 +533,7 @@ line-height: 40px;
   margin-bottom: 16px;
   font-weight: 500;
 font-size: 16px;
-line-height: calc(16 / 24);
+line-height: calc(24/16);
 color: #FFFFFF;
 }
 
@@ -548,8 +552,6 @@ color: #FFFFFF;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
 
@@ -565,12 +567,15 @@ color: #FFFFFF;
   background: #f4f4fd;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
+
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+
 }
 
 
 .filter-btn:hover, .filter-btn:focus {
   color: #ffffff;
-  background: var(--color-hover);
+  background-color: var(--color-hover);
 }
 
 /* ---------------WORKS--------------------- */
@@ -608,9 +613,13 @@ flex-wrap: wrap;
     margin-right: 24px;
     margin-bottom: 48px;
    position: relative;
+
+   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+
+   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-item:hover{
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 
